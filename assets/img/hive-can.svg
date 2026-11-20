@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 480" role="img" aria-label="Illustration of the matte black Hive Energy Drink can with gold honeycomb pattern">
+  <!-- PREVIEW ILLUSTRATION: replace with the client's official product photograph before launch -->
+  <defs>
+    <linearGradient id="body" x1="0" x2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset=".18" stop-color="#1c1c1c"/>
+      <stop offset=".32" stop-color="#3a3a3a"/>
+      <stop offset=".45" stop-color="#141414"/>
+      <stop offset=".8" stop-color="#0a0a0a"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0" stop-color="#5c5c5c"/>
+      <stop offset=".3" stop-color="#e6e6e6"/>
+      <stop offset=".55" stop-color="#8a8a8a"/>
+      <stop offset="1" stop-color="#3b3b3b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#8a6a1f"/>
+      <stop offset=".45" stop-color="#f3cf6b"/>
+      <stop offset="1" stop-color="#a47b22"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="hex" width="24" height="41.57" patternUnits="userSpaceOnUse" patternTransform="scale(.9)">
+      <path d="M12 0l12 6.93v13.86L12 27.71 0 20.79V6.93zM0 34.64l12-6.93 12 6.93" fill="none" stroke="url(#gold)" stroke-width="1.6"/>
+    </pattern>
+    <clipPath id="can"><rect x="22" y="46" width="196" height="392" rx="10"/></clipPath>
+  </defs>
+  <!-- lid and base -->
+  <path d="M34 30h172l12 18H22z" fill="url(#metal)"/>
+  <ellipse cx="120" cy="30" rx="86" ry="8" fill="#bdbdbd"/>
+  <path d="M22 436h196l-14 22H36z" fill="url(#metal)"/>
+  <!-- body -->
+  <rect x="22" y="46" width="196" height="392" rx="10" fill="url(#body)"/>
+  <g clip-path="url(#can)">
+    <rect x="22" y="300" width="196" height="140" fill="url(#hex)" opacity=".85"/>
+    <rect x="22" y="46" width="196" height="70" fill="url(#hex)" opacity=".35"/>
+    <path d="M22 300 C 80 284, 160 316, 218 296" fill="none" stroke="url(#gold)" stroke-width="3"/>
+    <text x="120" y="232" text-anchor="middle" font-family="Anton, Impact, sans-serif" font-size="92" fill="#fff" letter-spacing="2">HIVE</text>
+    <text x="120" y="262" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="url(#gold)" letter-spacing="5">ENERGY DRINK</text>
+    <rect x="56" y="46" width="34" height="392" fill="url(#shine)"/>
+  </g>
+</svg>
