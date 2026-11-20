@@ -7,7 +7,7 @@
 :root{
   --black:#070707;--ink:#0f0f0f;--panel:#151515;--line:#2a2a2a;
   --gold:#d4a72c;--gold-hi:#f3cf6b;--gold-lo:#8a6a1f;
-  --green:#0e3b2c;--green-hi:#1d6a4e;--white:#fff;--muted:#b9b4a6;
+  --green:#121212;--green-hi:#1c1c1c;--white:#fff;--muted:#b9b4a6;
   --radius:14px;--wrap:1180px;
 }
 *{box-sizing:border-box;margin:0}
@@ -109,12 +109,12 @@ h3{font-size:1.6rem}
 .card p{color:var(--muted);font-size:.95rem;margin-top:6px}
 
 /* moments strip */
-.moments{background:linear-gradient(180deg,var(--black),var(--green) 140%)}
+.moments{background:linear-gradient(180deg,var(--black),#141414 140%)}
 .center{text-align:center;margin-inline:auto}
 .center .lead{margin-inline:auto}
 
 /* cta band */
-.cta-band{border-radius:28px;padding:70px 60px;background:linear-gradient(120deg,rgba(14,59,44,.95),rgba(7,7,7,.95)),url(../img/honeycomb.svg);border:1px solid rgba(212,167,44,.35);display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+.cta-band{border-radius:28px;padding:70px 60px;background:linear-gradient(120deg,rgba(24,24,24,.95),rgba(7,7,7,.95)),url(../img/honeycomb.svg);border:1px solid rgba(212,167,44,.35);display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
 .cta-band .btn-row{justify-content:flex-end;margin:0}
 
 /* page hero */
@@ -194,3 +194,7 @@ textarea{min-height:140px;resize:vertical}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
 }
+
+/* empty product slot, until the client supplies official photography */
+.product-slot{display:grid;place-items:center;text-align:center;aspect-ratio:1/2;border:1px dashed rgba(212,167,44,.55);border-radius:22px;background:rgba(255,255,255,.02);color:var(--muted);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;padding:20px}
+.can-stage.product-slot{aspect-ratio:auto}
